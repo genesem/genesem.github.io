@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title> Title </title>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" media="all  href="//cdn.jsdelivr.net/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" media="all href="my.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+$(function(){ // Refresh div id=refresh every 3 secs
+setInterval(function(){
+ $("#refresh").load("http://jetstat.com/v.php","");
+},3000);
+});
+</script>
+
+</head><body>
+
+<h2> Header </h2>
+
+<hr/>
+
+<div id="refresh">
+ Waiting for data..
+</div>
+
+<hr/>
+<p>&copy;2014, jetstat.com</p>
+
+</body>
+</html>
+

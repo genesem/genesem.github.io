@@ -6,5 +6,5 @@ default: push
 push: 
 	git add *
 	git commit -m "stub"
-	git push -u origin master
+	git push origin master
 
